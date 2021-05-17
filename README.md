@@ -1,2 +1,0 @@
-# lucas-company
-Website Portfólio
