@@ -1,0 +1,787 @@
+body {
+    overflow-x: hidden;
+}
+
+#navbar-fixed .content-navbar {
+    position: absolute;
+    padding: 0 16%;
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar-fixed .content-navbar .logo h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#navbar-fixed .content-navbar .menu-navbar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+}
+
+#navbar-fixed .content-navbar .menu-navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -.30rem;
+    transition: ease-in-out .3s;
+    width: 0%;
+    height: 2px;
+    left: 0;
+}
+
+#navbar-fixed .content-navbar .menu-navbar a:hover::after {
+    transition: ease-in-out .3s;
+    width: 100%;
+    background-color: #fff;
+}
+
+#navbar-fixed .content-navbar.active {
+    background-color: #2F2F38;
+}
+
+
+/* navbar responsive */
+
+.navbar-responsive .content-navbar {
+    background-color: #292931;
+    color: #fff;
+    position: absolute;
+    width: 25rem;
+    left: -40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-in-out .3s;
+    height: 100vh;
+    padding: 10% 0;
+    z-index: 99999;
+}
+
+.navbar-responsive .content-navbar .logo h1 {
+    color: rgba(255, 255, 255, 0.80);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.navbar-responsive .content-navbar .menu-itens a {
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.808);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.navbar-responsive .content-navbar .menu-itens a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    transition: ease-in-out .3s;
+}
+
+.navbar-responsive .content-navbar .menu-itens a:hover::after {
+    transition: ease-in-out .3s;
+    width: 100%;
+    background-color: #fff;
+}
+
+.navbar-responsive .content-navbar .menu-navbar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar-responsive .content-navbar .menu-navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: -.20rem;
+    width: 0%;
+    transition: ease-in-out .3s;
+    height: 3px;
+    left: 0;
+}
+
+.navbar-responsive .content-navbar .menu-navbar a:hover::after {
+    width: 100%;
+    background-color: #fff;
+    transition: ease-in-out .3s;
+}
+
+.navbar-responsive .content-navbar.active {
+    transition: ease-in-out .3s;
+    left: 0;
+}
+
+
+/* Box data and hoours */
+
+.box-hours {
+    background-color: #24242B;
+    border-radius: .15rem;
+    box-shadow: 10px 10px 1px rgb(0, 0, 0, 0.25);
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000000000000;
+    text-align: center;
+    transition: ease-in-out .3s;
+}
+
+.box-hours.close {
+    right: -40rem;
+    transition: ease-in-out .3s;
+}
+
+.box-hours h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.box-hours h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.box-hours i {
+    font-size: 1.5rem;
+    position: absolute;
+    top: .70rem;
+    right: 1rem;
+    cursor: pointer;
+    color: #fff;
+    transition: ease-in-out .3s;
+}
+
+.box-hours i:hover {
+    color: #9696EB;
+    transition: ease-in-out .3s;
+}
+
+
+/* Home page */
+
+#home-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #24242B;
+}
+
+#home-page .title-home .date {
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 1.2rem;
+    padding-bottom: 0;
+    font-weight: bold;
+    transition: ease-in-out .3s;
+}
+
+#home-page .title-home h1 {
+    width: 70%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.3rem;
+    padding-bottom: 1%;
+}
+
+#home-page .title-home p {
+    color: rgb(255, 255, 255, 0.80);
+    font-weight: 350;
+    font-size: 1.1rem;
+    width: 70%;
+    padding-bottom: 2%;
+}
+
+#home-page .title-home a {
+    color: rgb(255, 255, 255, 0.80);
+    text-decoration: none;
+    background-color: #32323B;
+    font-weight: 400;
+    padding: .70rem 5rem;
+    font-size: 1.1rem;
+    border-radius: .15rem;
+    transition: ease-in-out .3s;
+}
+
+#home-page .title-home a:hover {
+    transition: ease-in-out .3s;
+    background-color: #9696EB;
+}
+
+#home-page .home-image {
+    animation: animation ease-in-out 4s infinite;
+    text-align: right;
+}
+
+#home-page .home-image img {
+    width: 70%;
+}
+
+.wave {
+    position: relative;
+}
+
+.wave svg {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* landing skills */
+
+#soft-skills {
+    width: 100%;
+    background-color: #292931;
+}
+
+#soft-skills .text-skill h1 {
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 2.2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+#soft-skills .text-skill h1::after {
+    content: '';
+    position: absolute;
+    bottom: -.30rem;
+    border-radius: 80rem;
+    left: 0;
+    background-color: #9696EB;
+    width: 30%;
+    height: 5px;
+}
+
+#soft-skills .content-skill h2 {
+    width: 70%;
+    color: rgb(255, 255, 255, 1);
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+#soft-skills .content-skill p {
+    color: rgb(255, 255, 255, 0.70);
+    width: 70%;
+    font-weight: 350;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+#soft-skills .content-skill a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #32323B;
+    padding: .70rem 3rem;
+    border-radius: .15rem;
+    font-size: 1.2rem;
+    transition: ease-in-out .3s;
+}
+
+#soft-skills .content-skill a:hover {
+    transition: ease-in-out .3s;
+    background-color: #9696EB;
+}
+
+#soft-skills .box-skill {
+    animation: animation ease-in-out 5s infinite;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #2F2F38;
+    border-bottom: 10px solid #9696EB;
+    border-bottom-left-radius: .80rem;
+    border-bottom-right-radius: .80rem;
+    position: relative;
+}
+
+#soft-skills .box-skill .icon-rocket {
+    position: absolute;
+    right: -2rem;
+    top: -2rem;
+}
+
+#soft-skills .box-skill .icon-rocket i {
+    padding: 1rem;
+    background-color: #9696EB;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 3rem;
+    box-shadow: 7px -5px 1px rgba(150, 150, 235, 0.60);
+}
+
+#soft-skills .box-skill h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-top: 5%;
+}
+
+#soft-skills .box-skill .bar {
+    margin: 1rem;
+    border-radius: 80rem;
+    background-color: #292930;
+    height: 19px;
+}
+
+#soft-skills .box-skill .porcentage {
+    border-radius: 80rem;
+    background-color: #9696EB;
+    height: 19px;
+    width: 0%;
+    transition: all 0.5s ease;
+}
+
+
+/* landing works */
+
+#landing-works {
+    width: 100%;
+    background-color: #24242B;
+}
+
+#landing-works .title-work h1 {
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: relative;
+}
+
+#landing-works .title-work p {
+    padding-top: 1rem;
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 1rem;
+    font-weight: 350;
+}
+
+#landing-works .title-work h1::after {
+    content: '';
+    position: absolute;
+    bottom: -.50rem;
+    border-radius: 80rem;
+    left: 0;
+    background-color: #9696EB;
+    width: 27%;
+    height: 5px;
+}
+
+#landing-works .works {
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#landing-works .works .overlay-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: ease-in-out .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#landing-works .works:hover .overlay-image {
+    opacity: 1;
+}
+
+#landing-works .works img {
+    border-radius: 1rem;
+    transition: ease-in-out .3s;
+}
+
+#landing-works .works:hover img {
+    transform: scale(1.1);
+    transition: ease-in-out .3s;
+}
+
+#landing-works .works .overlay-image h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+#landing-works .works .overlay-image p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 350;
+}
+
+#landing-works .works .overlay-image a {
+    text-decoration: none;
+    color: #fff;
+    padding: .70rem 2rem;
+    background-color: #24242B;
+    border-radius: .15rem;
+    font-weight: 350;
+    transition: ease-in-out .3s;
+    font-size: 1.2rem;
+}
+
+#landing-works .works .overlay-image a:hover {
+    transition: ease-in-out .3s;
+    background-color: #9696EB;
+}
+
+
+/* landing about  */
+
+#landing-about {
+    width: 100%;
+    background-color: #292931;
+}
+
+#landing-about .text-about {
+    margin-bottom: 10%;
+}
+
+#landing-about .text-about h1 {
+    color: rgb(255, 255, 255, 0.80);
+    font-weight: bold;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+#landing-about .text-about h1::after {
+    content: '';
+    position: absolute;
+    bottom: -.50rem;
+    border-radius: 80rem;
+    left: 0;
+    width: 26.6%;
+    height: 5px;
+    background-color: #9696EB;
+}
+
+#landing-about .box-about {
+    background-color: #363640;
+    text-align: center;
+    padding: 3rem;
+    box-shadow: -10px 10px 1px rgb(0, 0, 0, 0.25);
+    border-radius: 1rem;
+}
+
+#landing-about .box-about .content-about img {
+    margin-top: -110px;
+    width: 130px;
+    border: 5px solid #9696EB;
+    height: 130px;
+    border-radius: 50%;
+}
+
+#landing-about .box-about .content-about h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+#landing-about .box-about .content-about p {
+    color: rgb(255, 255, 255, 0.70);
+    font-weight: 350;
+    font-size: 1.2rem;
+}
+
+
+/* landing contact*/
+
+#landing-contact {
+    width: 100%;
+    background-color: #292931;
+}
+
+#landing-contact .content-contact {
+    width: 100%;
+}
+
+#landing-contact .content-contact h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+#landing-contact .content-contact h2 {
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 1.2rem;
+    font-weight: 350;
+    padding-bottom: 1rem;
+}
+
+#landing-contact .content-contact .contacts-cellphone h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+#landing-contact .content-contact .contacts-cellphone i {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#landing-contact .content-contact .contacts-cellphone a {
+    text-decoration: none;
+}
+
+#landing-contact .content-contact .contacts-cellphone p {
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+#landing-contact .content-contact .contacts-cellphone p:hover {
+    color: #9696EB;
+    transition: ease-in-out .3s;
+}
+
+
+/* landing services */
+
+#landing-services {
+    width: 100%;
+    background-color: #2F2F38;
+}
+
+#landing-services .text-services {
+    text-align: center;
+}
+
+#landing-services .text-services h1 {
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#landing-services .content-services {
+    background-color: #363640;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: -10px 10px 4px rgb(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#landing-services .content-services i {
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    border: 1px solid #fff;
+}
+
+#landing-services .content-services h2 {
+    color: rgb(255, 255, 255, 0.80);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+#landing-services .content-services h2::after {
+    content: '';
+    position: absolute;
+    background-color: #292931;
+    width: 50%;
+    transform: translateX(50%);
+    height: 3px;
+    left: 0;
+    bottom: -.70rem;
+}
+
+#landing-services .content-services p {
+    color: rgb(255, 255, 255, 0.70);
+    font-weight: 350;
+    padding-top: 1rem;
+}
+
+
+/* landing form */
+
+#landing-contact form {
+    width: 100%;
+    position: relative;
+}
+
+#landing-contact .modal-alert {
+    padding: 1rem;
+    top: -5rem;
+    width: 100%;
+    background-color: #d42f2f;
+    position: absolute;
+    right: -60rem;
+    transition: all 0.5s ease;
+}
+
+#landing-contact .modal-alert.alert {
+    right: 0%;
+    border-radius: .20rem;
+    transition: all 0.5s ease;
+}
+
+#landing-contact .modal-alert.alert.active {
+    background-color: #9696EB;
+}
+
+#landing-contact .modal-alert h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255, 0.80);
+}
+
+#landing-contact .content-form {
+    width: 100%;
+    padding: 2rem;
+    background-color: #363640;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 10px 10px 1px rgb(0, 0, 0, 0.25);
+    border-bottom: 15px solid #9696EB;
+    border-radius: 1rem;
+}
+
+#landing-contact .content-form .textAvaible p {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #9696EB;
+    border-radius: 50px;
+}
+
+#landing-contact .content-form input {
+    font-size: 1.2rem;
+    border: 2px solid rgb(255, 255, 255, 0.70);
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    outline: none;
+    transition: ease-in-out .3s;
+    font-weight: 400;
+    background-color: #292931;
+}
+
+#landing-contact .content-form input.alert {
+    border: 2px solid red;
+}
+
+#landing-contact .content-form input:focus {
+    border: 2px solid #9696EB;
+    transition: ease-in-out .3s;
+}
+
+#landing-contact .content-form input::placeholder {
+    color: rgb(255, 255, 255, 0.70);
+    font-weight: 400;
+    transition: ease-in-out .3s;
+}
+
+#landing-contact .content-form textarea {
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    outline: none;
+    font-weight: 300;
+    transition: ease-in-out .3s;
+    background-color: #292931;
+}
+
+#landing-contact .content-form textarea:focus {
+    transition: ease-in-out .3s;
+    border: 2px solid #9696EB;
+}
+
+#landing-contact .content-form a {
+    text-align: center;
+    background-color: #292931;
+    padding: .80rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius: .15rem;
+    font-weight: 450;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+#landing-contact .content-form a:hover {
+    background-color: #9696EB;
+    transition: ease-in-out .3s;
+}
+
+
+/* footer style  */
+
+#footer {
+    width: 100%;
+    background-color: #24242B;
+}
+
+#footer .left-footer p {
+    font-size: 1.1rem;
+    text-align: left;
+    color: rgb(255, 255, 255, 0.70);
+    font-weight: 400;
+    width: 70%;
+}
+
+#footer .left-footer a {
+    text-decoration: none;
+    color: #9696EB;
+    font-weight: bold;
+}
+
+#footer .right-footer {
+    text-align: right;
+}
+
+#footer .right-footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 350;
+    transition: ease-in-out .3s;
+    font-size: 1.1rem;
+    padding-right: 1.5rem;
+}
+
+#footer .right-footer a:hover {
+    color: rgba(255, 255, 255, 0.801);
+    transition: ease-in-out .3s;
+}

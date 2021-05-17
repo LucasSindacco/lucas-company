@@ -1,0 +1,143 @@
+/* Responsive 1024px */
+
+@media screen and (max-width: 1024px) {
+    #home-page .title-home {
+        padding-top: 10%;
+    }
+    #home-page .title-home h1 {
+        font-size: 1.5rem;
+    }
+    #home-page .title-home p {
+        font-size: .9rem;
+    }
+}
+
+
+/* Responsive 991px */
+
+@media screen and (max-width: 991px) {
+    .navbar-responsive .content-navbar {
+        width: 50%;
+    }
+    .navbar-responsive .content-navbar .menu-navbar a {
+        font-size: 1.3rem;
+    }
+    #home-page .home-image {
+        text-align: left;
+    }
+    #soft-skills .box-skill {
+        margin-top: 10%;
+    }
+    #landing-works .title-work h1 {
+        font-size: 1.3rem;
+    }
+    #soft-skills .box-skill {
+        padding: .50rem;
+    }
+    #soft-skills .box-skill h1 {
+        font-size: 1.3rem;
+    }
+    #soft-skills .box-skill .icon-rocket {
+        right: 0;
+    }
+    #soft-skills .box-skill .icon-rocket i {
+        font-size: 1.3rem;
+    }
+    #landing-works .works .overlay-image h1 {
+        font-size: 1.3rem;
+    }
+    #landing-works .works .overlay-image p {
+        font-size: 1rem;
+    }
+    #landing-login .content-login {
+        margin-bottom: 3rem;
+    }
+    #landing-login .content-login h2 {
+        font-size: 1.3rem;
+    }
+    #landing-login .content-login p {
+        font-size: 1rem;
+    }
+    #footer .left-footer p {
+        text-align: left;
+    }
+    #footer .right-footer p {
+        text-align: left;
+    }
+    #footer .right-footer {
+        text-align: left;
+    }
+    .box-hours p {
+        font-size: 1rem;
+    }
+    #footer .left-footer p {
+        width: 100%;
+    }
+}
+
+
+/* Responsive 600px */
+
+@media screen and (max-width: 600px) {
+    #navbar-fixed .content-navbar {
+        padding: 0 3%;
+    }
+    .navbar-responsive .content-navbar {
+        width: 100%;
+    }
+    #soft-skills .text-skill h1 {
+        font-size: 1.3rem;
+    }
+    #home-page .title-home h1 {
+        font-size: 1.1rem;
+    }
+    #home-page .title-home p {
+        font-size: .8rem;
+    }
+    #soft-skills .content-skill h2 {
+        font-size: 1.3rem;
+    }
+    #soft-skills .content-skill p {
+        font-size: .9rem;
+    }
+    #soft-skills .content-skill a {
+        font-size: 1rem;
+    }
+    #landing-login .title-login h1 {
+        font-size: 1.4rem;
+    }
+    #home-page .title-home .date {
+        font-size: .9rem;
+    }
+    #navbar-fixed .content-navbar .logo h1 {
+        font-size: 1.5rem;
+    }
+    #navbar-fixed .content-navbar .menu-navbar a {
+        font-size: 1.5rem;
+    }
+    #landing-contact .content-contact h1 {
+        font-size: 1.3rem;
+    }
+    #landing-contact .content-contact h2 {
+        font-size: .9rem;
+    }
+    .box-hours {
+        width: 60%;
+    }
+    .box-hours p {
+        font-size: .9rem;
+    }
+    .box-hours i {
+        font-size: 1.1rem;
+    }
+    #footer .right-footer a {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+    #navbar-fixed .content-navbar .logo h1 {
+        font-size: 1.2rem;
+    }
+    #home-page .title-home a {
+        padding: .70rem 2rem;
+    }
+}
